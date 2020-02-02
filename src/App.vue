@@ -1,11 +1,28 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app id="app">
+    <v-navigation-drawer color="green" dark
+    expand-on-hover 
+    hide-overlay
+    permanent
+    right
+    app>
+
+        <v-list
+    nav 
+    shaped
+    dense
+      >
+    <v-list-item>
+      
+    </v-list-item>
+    
+    </v-navigation-drawer>
+    <v-content class="px-12 py-3">
+      <v-container fluid>
+        <router-view/>
+      </v-container>
+    </v-content>
+  </v-app>
 </template>
 
 <style lang="scss">
