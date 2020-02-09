@@ -12,10 +12,13 @@
     shaped
     dense
       >
+
+
     <v-list-item>
       
     </v-list-item>
     
+    </v-list>
     </v-navigation-drawer>
     <v-content class="px-12 py-3">
       <v-container fluid>
