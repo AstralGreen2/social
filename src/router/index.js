@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import Login from '../views/Login.vue'
+import Regist from '../views/Regist.vue'
 import User from '../views/User.vue'
 import Users from '../views/Users.vue'
 
@@ -14,7 +16,11 @@ const routes = [
     },
 
     {
-      path: '/users/:id',
+      path: '/regist',
+      component:Regist
+    },
+    {
+      path: '/users/:0',
       component : User
     },
     {

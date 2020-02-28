@@ -24,17 +24,18 @@
     </v-card>
 </template>
 
-<script >
+<script>
 export default {
    
     methods:{
+      
+
         getUsers(){
             this.axios.get('http://jsonplaceholder.typicode.com/users')
             .then(
                 (response)=>{
-                  
-                   alert (response);
-                    
+                
+                window.console.log(response.data[0].id)
                 }
             )
         }

@@ -34,14 +34,15 @@ export default {
     },
     methods:{
         authenticate(){
-            this.axios.get(' http://188.225.47.187/api/jsonstorage/3f9f336aca97e70115c98aceb4e3e643')
+            this.axios.get('http://188.225.47.187/api/jsonstorage/65c1021f3ef91c5faf9cb44d78e4d50b')
             .then(
                 (response)=>{
-                    let users = response.data;
+                    let users = response.data.users;
                     let found = false;
                     for(let index in users){
                         if(this.login == users[index].login && this.password == users[index].password){
-                            this.$router.push('/users' + this.myId);
+                            this.$emit('login', index);
+                            this.$router.push('/users/' + users[index].myId);
                             found = true;
                             break;
                         }
