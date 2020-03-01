@@ -1,8 +1,5 @@
 <template>
   <v-app id="app">
-
-
-
     
     <v-navigation-drawer color="green" dark
     expand-on-hover 
@@ -11,10 +8,6 @@
     right
     app
     >
-
-      
-
-
         <v-list nav  shaped  dense>
 
 
@@ -98,5 +91,24 @@
   }
 }
 </style>
+<script>
+export default {
+    data(){
+       return{
+            id:''
+       } 
+    },
 
+
+    methods:{
+      buildPage(){
+
+      }
+
+
+    }
+
+
+}
+</script>
 

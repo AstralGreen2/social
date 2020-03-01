@@ -1,28 +1,55 @@
 <template>
-     <v-card
-      class="mx-auto"
-      max-width="344"
-      outlined
-    >
-      <v-list-item three-line>
-        <v-list-item-content>
-          <div class="overline mb-4">OVERLINE</div>
-          <v-list-item-title class="headline mb-1">Headline 5</v-list-item-title>
-          <v-list-item-subtitle>Greyhound divisely hello coldly fonwderfully</v-list-item-subtitle>
-        </v-list-item-content>
+<v-container>
+     <v-card class="d-inline-block mx-auto">
+    <v-container>
+      
+      <v-row  justify="space-around">
+        <v-col cols="8">
+          <div class= "icon">
+            <v-img
+            height="75"
+            width="75"
+            src="https://randomuser.me/api/portraits/men/7.jpg"
+          ></v-img>
+
+          </div>
+         
+          <v-card-title>ijssdgsdg</v-card-title>
+           <v-card-subtitle>kugfgdbisygffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</v-card-subtitle>
+        </v-col>
+
+        <v-col
+          cols="auto"
+          class="text-center pl-0"
+        >
+          <v-row
+            class="flex-column ma-0 fill-height"
+            justify="center"
+          >
+            <v-col class="px-0">
+              <v-btn icon>
+                <v-icon>mdi-heart</v-icon>
+              </v-btn>
+            </v-col>
+
+           
+
+
+          </v-row>
+         
+        </v-col>
+
+      </v-row>
+    </v-container>
+  </v-card>
+
+
   
-        <v-list-item-avatar
-          tile
-          size="80"
-          color="grey"
-        ></v-list-item-avatar>
-      </v-list-item>
+</v-container>
   
-      <v-card-actions>
-        <v-btn text @click="getUsers">Button</v-btn>
-      </v-card-actions>
-    </v-card>
 </template>
+
+
 
 <script>
 export default {

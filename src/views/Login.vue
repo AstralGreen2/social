@@ -41,7 +41,7 @@ export default {
                     let found = false;
                     for(let index in users){
                         if(this.login == users[index].login && this.password == users[index].password){
-                            this.$emit('login', index);
+                            this.$emit('login', users[index].myId);
                             this.$router.push('/users/' + users[index].myId);
                             found = true;
                             break;
@@ -49,7 +49,7 @@ export default {
                     }
 
                     if (!found){
-                        window.alert('skufgsuyfg');
+                        window.alert('Что-то пошло не так. Попробуй еще');
                     }
                 }
             )

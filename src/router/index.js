@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 import Login from '../views/Login.vue'
 import Regist from '../views/Regist.vue'
-import User from '../views/User.vue'
+
 import Users from '../views/Users.vue'
 
 Vue.use(VueRouter)
@@ -19,10 +19,7 @@ const routes = [
       path: '/regist',
       component:Regist
     },
-    {
-      path: '/users/:0',
-      component : User
-    },
+   
     {
       path: '/users',
       component : Users
